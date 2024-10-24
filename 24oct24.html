@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(rub.png);
+            color: red;
+            animation: anim2 5s;
+        }
+        body img{
+            width: 200px;
+            height: 400px;
+            animation: anim1 3s;
+        }
+        @keyframes anim1 {
+            0%{opacity: 0;transform: scale(0.1) rotate(-90deg);}
+            100%{opacity: 1;transform: scale(1) rotate(0deg);}
+        }
+        @keyframes anim2 {
+            0%{background-color: red;}
+            0%{background-color: blue;}
+        }
+    </style>
+</head>
+<body>
+    <!--
+    <img src="rub.png">
+    <br>
+    <img src="pikituz.png">
+    <br>
+    <img src="pikiking.png">
+    <br>
+    <img src="piki3.jpg">
+    <br>
+    <img src="piki2.jpg">
+    <br>
+    <img src="krestiking.jpg">
+    <br>
+    <img src="kresti10.jpg">
+    <br>
+    <img src="kresti2.jpg">
+    <br>
+    <img src="bubi10.jpg">
+    <br>
+    <img src="bubi8.jpg">
+    <br>
+    <img src="4erviking.png">
+    -->
+</body>
+<script>
+    let cards=["pikituz.png","pikiking.png","piki3.jpg","piki2.jpg","krestiking.jpg","kresti10.jpg","kresti2.jpg","bubi10.jpg","bubi8.jpg","4erviking.png"]
+    for(let i=0;i<10;i++){
+        document.write("<img src="+cards[i]+">")
+        document.write("<br>")
+    }
+</script>
+</html>
