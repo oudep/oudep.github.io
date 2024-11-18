@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let balance = 100000;
+    let rate = 18.5;
+    let period = 20;
+    let a = 0
+    let b = 0
+
+    document.write("Сумма:" + balance + "<br>");
+    document.write("Процент:" + rate + "<br>");
+    document.write("Срок:" + period + "<br>");
+
+    for(period = 20; period > 0; period--){
+        b++
+        a = balance / 100;
+        a = a * rate;
+        balance = balance + a;
+        document.write("Через " + b + " год:" + balance + "<br>");
+    }
+</script>
+</html>
