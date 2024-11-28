@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let c1 = 3;
+    let r1 = 3;
+
+    let c2 = 7;
+    let r2 = 1;
+
+    let arrC = [c1 - 1, c1, c1 + 1];
+    let arrR = [r1 - 1, r1, r1 + 1];
+    let a = 0;
+    let b = 0;
+    let c = 0;
+
+    for(let i = 0; i < 3; i++){
+        if(c2 == arrC[i]){
+            a = 1;
+        };
+    };
+
+    for(let i = 0; i < 3; i++){
+        if(r2 == arrR[i]){
+            b = 1;
+        };
+    };
+
+    if(a == 1){
+        if(b == 1){
+            document.write("Король может походить");
+        }else{
+            c++
+        };
+    }else{
+        c++
+    };
+
+    if(c > 0){
+        document.write("Король не может походить");
+    };
+</script>
+</html>
