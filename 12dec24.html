@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let x = prompt("Высота елки?");
+    x--;
+    let y = [];
+
+    for(let i = x; i > 0; i--){
+        y.push("_");
+    };
+    y.push("*");
+
+    for(let a = 0; a <= x; a++){
+        document.write(y.join("_") + "<br>");
+        y.shift();
+        y.push("*");
+        y.push("*");
+    };
+</script>
+</html>
