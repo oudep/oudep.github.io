@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let w = 7;
+    let h = 5;
+    let aline = [];
+    let bline = [];
+
+    for(let i = 0; i < w; i++){
+        aline.push("*")
+    };
+
+    bline.push("*");
+    for(let b = w - 2; b > 0; b--){
+        bline.push("_")
+    };
+    bline.push("*");
+
+    document.write(aline.join('') + "<br>");
+    for(let b = h - 2; b > 0; b--){
+        document.write(bline.join('') + "<br>");
+    };
+    document.write(aline.join('') + "<br>");
+</script>
+</html>
